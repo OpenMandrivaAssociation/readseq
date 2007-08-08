@@ -1,6 +1,6 @@
 %define name	readseq
 %define version	19930201
-%define rel	5
+%define rel	6
 %define release	%mkrel %{rel}
 
 Name:		%{name}
