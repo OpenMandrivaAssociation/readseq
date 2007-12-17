@@ -12,7 +12,6 @@ License:	Public Domain
 URL:		http://iubio.bio.indiana.edu/soft/molbio/readseq/
 Source:		%{name}-%{version}.tar.bz2
 Patch:		%{name}.makefile.patch
-BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Readseq is a program for converting among several biosequence file formats,
