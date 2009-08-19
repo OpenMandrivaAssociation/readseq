@@ -1,6 +1,6 @@
 %define name	readseq
 %define version	19930201
-%define rel	6
+%define rel	7
 %define release	%mkrel %{rel}
 
 Name:		%{name}
@@ -11,7 +11,9 @@ Group:		Sciences/Biology
 License:	Public Domain
 URL:		http://iubio.bio.indiana.edu/soft/molbio/readseq/
 Source:		%{name}-%{version}.tar.bz2
-Patch:		%{name}.makefile.patch
+Patch0:		%{name}.makefile.patch
+Patch1:		format_arguments_fix.patch
+Patch2:		fix_getline.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
@@ -40,7 +42,9 @@ by D. Gilbert. These formats are currently understood by readseq:
 %prep
 rm -rf %{buildroot}
 %setup
-%patch
+%patch0
+%patch1
+%patch2
 
 %build
 export CFLAGS=$RPM_OPT_FLAGS
