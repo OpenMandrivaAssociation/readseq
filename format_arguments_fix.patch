@@ -1,0 +1,29 @@
+--- readseq.c~	2003-01-25 23:48:36.000000000 +0100
++++ readseq.c	2009-08-19 09:41:28.000000000 +0200
+@@ -324,7 +324,7 @@
+ {
+   short   i, midi;
+ 
+-  fprintf(stderr,title);
++  fprintf(stderr, "%s", title);
+   fprintf(stderr,
+   "usage: readseq [-options] in.seq > out.seq\n");
+   fprintf(stderr," options\n");
+@@ -764,7 +764,7 @@
+ 
+   quietly = (dopipe || (gotinputfile && (listonly || whichSeq != 0)));
+ 
+-  if (verbose || (!quietly && !gotinputfile)) fprintf( stderr, title);
++  if (verbose || (!quietly && !gotinputfile)) fprintf( stderr, "%s", title);
+   ifile = 1;
+ 
+                             /* UI: Choose output */
+@@ -961,7 +961,7 @@
+               if (seqout == 0) fprintf( foo,"\\\\\\\n");
+               break;
+             case kASN1:
+-              if (seqout == 0) fprintf( foo, kASN1headline);
++              if (seqout == 0) fprintf( foo, "%s", kASN1headline);
+               break;
+ 
+             case kPhylip:
