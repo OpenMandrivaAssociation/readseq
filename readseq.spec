@@ -9,7 +9,7 @@ Release:	%{release}
 Summary:	Reads and writes nucleic/protein sequences in various formats
 Group:		Sciences/Biology
 License:	Public Domain
-URL:		http://iubio.bio.indiana.edu/soft/molbio/readseq/
+URL:		https://iubio.bio.indiana.edu/soft/molbio/readseq/
 Source:		%{name}-%{version}.tar.bz2
 Patch0:		%{name}.makefile.patch
 Patch1:		format_arguments_fix.patch
