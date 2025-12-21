@@ -16,6 +16,7 @@ Patch1:		format_arguments_fix.patch
 Patch2:		fix_getline.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
+BuildRequires:	make
 %description
 Readseq is a program for converting among several biosequence file formats,
 by D. Gilbert. These formats are currently understood by readseq:
