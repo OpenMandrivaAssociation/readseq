@@ -1,7 +1,7 @@
 %define name	readseq
 %define version	19930201
 %define rel	9
-%define release	%mkrel %{rel}
+%define release %{rel}.1
 
 Name:		%{name}
 Version:	%{version}
